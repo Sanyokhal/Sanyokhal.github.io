@@ -20,7 +20,7 @@
 	text-decoration:none;
 	color:white;
 	font-size: 3vw;
-	text-shadow: black 0 0 3px;
+	text-shadow: black 0 0 2px;
 }
 .header h1{
 	font-family: 'Caveat', cursive;
@@ -74,20 +74,16 @@
 	padding-bottom: 5%;
 }
 .jpeg img{
-	width:20%;
+	width:35%;
 	height:20%;
 }
 .left_top{
 	padding-left: 9%;
 	padding-right: 10%;
 }
-.left_bottom{
-	padding-left: 9%;
-	padding-right: 10%;
-}
 .right_top{
-	padding-left: 10%;
-	padding-right:9%;
+	padding-left: 9%;
+	padding-right:10%;
 }
 .right_bottom{
 	padding-right: 9%;
