@@ -22,7 +22,7 @@
 	text-shadow: black 0 0 3px;
 }
 .header h1{
-	font-family: 'Caveat', cursive;
+	font-family: 'PT Serif Caption', serif;
 	color:yellow;
 	padding-bottom: 1%;
 	font-size: 10vw;
@@ -58,7 +58,7 @@
 	font-size: 8vw;
 	text-align: center;
 	color:yellow;
-	font-family: 'Caveat', cursive;
+	font-family: 'PT Serif Caption', serif;
 	padding-bottom: 5%;
 }
 .Cake h1:hover{
@@ -99,7 +99,7 @@
 	color:yellow;
 	font-size: 8vw;
 	padding-top: 4%;
-	font-family: 'Caveat', cursive;
+	font-family: 'PT Serif Caption', serif;
 }
 .Souvenirs h1:hover{
 	text-decoration:underline;
@@ -163,7 +163,7 @@
 	font-size: 7vw;
 	text-align: center;
 	color:yellow;
-	font-family: 'Caveat', cursive;
+	font-family: 'PT Serif Caption', serif;
 	padding-bottom: 3%;
 }
 .Tea h1:hover{
@@ -201,7 +201,7 @@
 	font-size: 7vw;
 	text-align: center;
 	color:yellow;
-	font-family: 'Caveat', cursive;
+	font-family: 'PT Serif Caption', serif;
 	padding-bottom: 3%;
 }
 .Coffe h1:hover{
@@ -217,7 +217,7 @@
 .photos h1{
 	padding-top: 3%;
 	padding-bottom: 3%;
-	font-family: 'Caveat', cursive;
+	font-family: 'PT Serif Caption', serif;
 	font-size:7vw;
 }
 .photos h3{
