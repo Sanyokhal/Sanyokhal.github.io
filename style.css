@@ -75,6 +75,7 @@
 .jpeg img{
 	width:35%;
 	height:20%;
+	max-width: 900px;
 }
 .left_top{
 	padding-left: 9%;
