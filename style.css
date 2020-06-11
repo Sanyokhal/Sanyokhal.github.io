@@ -1,223 +1,93 @@
-.header{
-	width:100%;
-	background-color: black;
-	text-align: center;
-	padding-bottom: 3%;
-	background-image:url(images/Back.jpg);
-}
 *{
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya SC', serif;
 }
-.header li{
-	text-decoration: none;
-	display: inline;
-	padding-bottom: 5%;
+.Top{
+	border-bottom: 1px solid black;
 }
-.header a{
-	text-decoration:none;
-	color:white;
-	font-size: 3vw;
-	text-shadow: black 0 0 3px;
-}
-.face a{
-	color:yellow;
-	padding-bottom: 1%;
-	font-size: 10vw;
-	text-shadow: black 0 0 3px;
-}
-.header h1:hover{
-	color:orange;
-	cursor: pointer;
-}
-.header a:hover{
-	color:#F7FF9F;
-	text-decoration: underline;
-}
-.photos{
-	text-align:center;
-	width:100%;
-	background-color: #FFCF84;
-	padding-bottom: 3%;
-}
-.photos img{
-	padding-top: 5%;
-	width:25%;
-	height:25%;
-	padding-left: 6.25%;
-}
-.Cake{
-	padding-top: 5%;
-	width:100%;
-	background-color: black;
-	color: white;
-}
-.Cake h1{
-	font-size: 8vw;
-	text-align: center;
-	color:yellow;
-	padding-bottom: 5%;
-}
-.Cake h1:hover{
-	text-decoration: underline;
-	color:orange;
-	cursor:pointer;
-}
-.jpeg{
-	padding-top: 5%;
-	width: 100%;
-	background-color: white;
-	padding-bottom: 5%;
-}
-.jpeg img{
-	width:35%;
-	height:20%;
-	max-width: 900px;
-}
-.left_top{
-	padding-left: 9%;
-	padding-right: 10%;
-}
-.right_top{
-	padding-left: 9%;
-	padding-right:10%;
-}
-.right_bottom{
-	padding-right: 9%;
-	padding-left: 10%;
-}
-.Souvenirs{
-	text-align: center;
-	background-color: black;
-	color:white;
-	width: 100%;
-}
-.Souvenirs h1{
-	padding-bottom: 4%;
-	color:yellow;
-	font-size: 8vw;
-	padding-top: 4%;
-}
-.Souvenirs h1:hover{
-	text-decoration:underline;
-	color:orange;
-	cursor: pointer;
-}
-.jpg{
-	padding-top: 5%;
-	width:100%;
-	background-color: white;
-}
-.jpg img{
-	width:40%;
-}
-.l_t{
-	padding-left: 4%;
-	padding-right: 5%;
-	padding-bottom: 3%;
-}
-.r_t{
-	padding-right: 4%;
-	padding-bottom: 3%;
-}
-.l_b{
-	padding-left: 4%;
-	padding-right: 5%;
-	padding-bottom: 3%;
-}
-.r_b{
-	padding-right: 4%;
-	padding-bottom: 3%;
-}
-.TOP{
-	padding-top: 3%;
-	padding-bottom: 3%;
-	width: 100%;
-	background-color: black;
-	color:yellow;
-}
-.TOP a{
-	text-decoration:none;
-	color:yellow;
-}
-.TOP h1{
-	text-align: center;
-	font-size: 3vw;
-}
-.TOP a:hover{
-	color:orange;
-	text-decoration: underline;
-}
-.Tea_info{
-	width:100%;
-}
-.Tea{
-	padding-top: 3%;
-	background-color: black;
-	text-align: center;
-}
-.Tea h1{
-	font-size: 7vw;
-	text-align: center;
-	color:yellow;
-	padding-bottom: 3%;
-}
-.Tea h1:hover{
-	text-decoration: underline;
-	color:orange;
-	cursor:pointer;
-}
-.Tea_info{
-	background-color: white;
-}
-.mainT{
+
+.work_text{
+	border:1px solid black;
+	width:70%;
+	margin-left: 15%;
 	padding-top: 2%;
-	color: orange;
-	font-size: 2vw;
+	padding-bottom: 2%;
+	background-color: #FF8552;
 }
-#Lst{
+.work_text h1{
+	text-align: center;
+	font-size: 5vw;
+	color: #297373;
+}
+img{
+	width:25%;
+}
+.work_text p{
+	text-align: center;
+	font-size: 3vw;
+	color: #297373;
+}
+.Top li{
+	display: inline;
+}
+.Top_menu a{
+	text-decoration: none;
+	color:#39393A;
+	padding-left: 2%;
+	font-size: 3vw;
+}
+ul{
+	padding-bottom: 1%;
+	text-align: center;
+	padding-top: 1%;
+}
+.Top_menu h1{
+	color:#FF8552;
+	font-size: 10vw;
+}
+.photo img{
+	width: 50%;
+	padding-bottom: 2%;
+	padding-left: 25%;
+	animation-name: trans;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+@keyframes trans{
+	0%{
+		width: 0%;
+		padding-bottom: 2%;
+		visibility: hidden;
+		padding-left: 50%;
+		opacity: 0%;
+	}
+	100%{
+		width: 50%;
+		padding-bottom: 2%;
+		padding-left: 25%;
+		visibility: visible;
+		opacity: 100%;
+	}
+}
+.coffe{
+	background-color: #FF8552;
+	width:70%;
+	margin-left: 15%;
+	border:1px solid black;
+	padding-top: 2%;
 	padding-bottom: 2%;
 }
-.mainT:hover{
-	cursor: pointer;
-	text-decoration: underline;
-}
-.Coffe{
-	width: 100%;
-	background-color: black;
-	padding-top: 3%;
+.coffe h1{
+	padding-top: 2%;
 	text-align: center;
-	color:orange;
+	font-size: 5vw;
+	color:#297373;
 }
-.Coffe li{
-	font-size: 3vw;
-	padding-bottom: 1%;
-}
-.Coffe h1{
-	font-size: 7vw;
+.coffe p{
 	text-align: center;
-	padding-bottom: 3%;
-	color:yellow;
-}
-.Coffe h1:hover{
-	color:orange;
-	text-decoration:underline;
-	cursor: pointer;
-}
-.coffe_info{
-	padding-top: 3%;
-	padding-bottom: 3%;
-	background-color: white;
-}
-.photos h1{
-	padding-top: 3%;
-	padding-bottom: 3%;
-	font-size:7vw;
-}
-.photos h3{
-	font-size: 3vw;
-}
-.TOP h6{
-	color:black;
+	font-size:3vw;
+	color: #297373;
+	padding-bottom: 2%;
 }
