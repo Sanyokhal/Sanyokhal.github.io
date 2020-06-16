@@ -91,3 +91,13 @@ ul{
 	color: #297373;
 	padding-bottom: 2%;
 }
+.bottom{
+	padding-top: 10%;
+	width:100%;
+	background-color: #D8D8D8;
+}
+.bottom img{
+	width:2%;
+	margin-left: 23.5%;
+	margin-bottom: 10%;
+}
