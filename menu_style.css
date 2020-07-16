@@ -33,17 +33,15 @@ ul{
 	display: inline;
 	font-size: 4vw;
 }
-.mid_menu h1{
-	padding-left: 5%;
-}
-.mid_menu li{
-	padding-left:5% ;
+.menu_bottom a{
+	color:#974B4B;
+	-webkit-text-stroke: 1px #000000;
 }
 #mid{
 	padding-left: 2.5%;
 	padding-right: 2.5%;
 }
-.menu_bottom a{
-	color:#974B4B;
-	-webkit-text-stroke: 1px #000000;
+.mid_menu{
+	width: 100%;
+	align-items: center;
 }
