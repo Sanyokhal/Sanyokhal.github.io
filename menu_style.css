@@ -45,4 +45,5 @@ ul{
 }
 .menu_bottom a{
 	color:#974B4B;
+	-webkit-text-stroke: 1px #000000;
 }

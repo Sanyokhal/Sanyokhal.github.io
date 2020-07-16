@@ -23,7 +23,7 @@ ul{
 	text-align: center;
 	padding-bottom: 2%;
 	padding-top: 2%;
-	-webkit-text-stroke: 1px #000000
+	-webkit-text-stroke: 1px #000000;
 }
 .photo img{/*Фото кави*/
 	width: 50%;
