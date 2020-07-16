@@ -1,46 +1,31 @@
-*{
+*{/*Основні налаштування*/
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya SC', serif;
 }
+a{
+	text-decoration: none;
+}
 .Top{
 	border-bottom: 1px solid black;
 }
-
-.work_text{
-	border:1px solid black;
-	width:70%;
-	margin-left: 15%;
-	padding-top: 1%;
-	padding-bottom: 2%;
-	background-color: #FF8552;
-}
-.work_text h1{
-	text-align: center;
-	font-size: 5vw;
-	color: #297373;
-}
 img{
 	width:25%;
-}
-.work_text p{
-	text-align: center;
-	font-size: 3vw;
-	color: #297373;
 }
 ul{
 	padding-bottom: 1%;
 	text-align: center;
 	padding-top: 1%;
 }
-.Top_menu h1{
+.Top h1{/*Лого */
 	color:#FF8552;
 	font-size: 10vw;
 	text-align: center;
 	padding-bottom: 2%;
 	padding-top: 2%;
+	-webkit-text-stroke: 1px #000000
 }
-.photo img{
+.photo img{/*Фото кави*/
 	width: 50%;
 	padding-bottom: 2%;
 	padding-left: 25%;
@@ -49,7 +34,7 @@ ul{
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
-@keyframes trans{
+@keyframes trans{/*Анімація появи фото*/
 	0%{
 		width: 0%;
 		padding-bottom: 2%;
@@ -65,7 +50,15 @@ ul{
 		opacity: 100%;
 	}
 }
-.coffe{
+
+.block h1{/*Основні блоки з інформацією*/
+	padding-top: 2%;
+	text-align: center;
+	font-size: 5vw;
+	color:#38ae7e;
+	-webkit-text-stroke: 1px #000000
+}
+.block{
 	background-color: #FF8552;
 	width:70%;
 	margin-left: 15%;
@@ -73,19 +66,14 @@ ul{
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
-.coffe h1{
-	padding-top: 2%;
-	text-align: center;
-	font-size: 5vw;
-	color:#297373;
-}
-.coffe p{
+.block p{
 	text-align: center;
 	font-size:3vw;
-	color: #297373;
+	color: #38ae7e;
 	padding-bottom: 2%;
+	-webkit-text-stroke: 1px #000000
 }
-.bottom{
+.bottom{/*Блок з контактними даними*/
 	align-items:center;
 	padding-top: 10%;
 	width:100%;
@@ -101,11 +89,11 @@ ul{
 	word-spacing: 2%;
 	font-size: 3vw;
 }
-.info ul{
-	font-size: 2vw;
+.info ul{/*Контактна інформація*/
+	font-size: 3vw;
 }
 .info h1{
-	font-size: 3vw;
+	font-size: 5vw;
 }
 .info li{
 	padding-bottom: 1%;
