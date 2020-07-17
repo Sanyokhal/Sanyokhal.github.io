@@ -45,3 +45,27 @@ ul{
 	width: 100%;
 	align-items: center;
 }
+.Cakes{
+	text-align: center;
+	margin-top: 2%;
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 2%;
+	border-bottom: black solid 1px;
+	border-top: black solid 1px;
+}
+.Cakes img{
+	width:30%;
+	padding-left: 3.33%;
+}
+.cake_text h1{
+	display: inline;
+}
+#mt{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.cake_text{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
