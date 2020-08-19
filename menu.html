@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="menu_style.css"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Totem menu</title>
+    <title>Totem</title>
     <link rel="icon" href="images/Icons/Icon.ico" type="images/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
@@ -10,25 +10,63 @@
     <div class="Top"><!--Лого-->
         <a href="index.html"><h1>TOTEM</h1></a>
     </div>
-    <div class="menu_bottom">
+    <div class="menu_bottom"><!--Меню під лого-->
         <ul>
             <li><a href="menu_cake.html">Тістечка</a></li>
             <li><a id="mid" href="menu_drink.html">Напої</a></li>
             <li><a href="#souvenir">Сувеніри</a></li>
         </ul>
     </div>
-    <div class="Upper">
-        <a href="menu.html"><h1>Меню</h1></a>
+    <div class="UpperBar"><!--Меню-->
+        <a href="menu.html"><h2>Меню</h2></a>
     </div>
-    <div class="mid_menu"></br>
-     <div class="Cakes">
-         <div class="cake_photo">
-            <img src="images/cakes/black_berry.webp" alt="Блек Бері"/><img src="images/Cakes/konkord.webp" alt="Конкорд"/><img src="images/Cakes/Vanil_shu.webp" alt="Ванільне Шу"/>
+    <div class="mid_menu"></br><!--Блок с асортиментом-->
+     <div class="Cakes"><!--Тістечка-->
+        <div id="cake_text_top"><!--текст-->
+            <a href="menu_cake.html"><h2>Тістечка</h2></a>
+        </div>
+         <div id="cake_photo"><!--фото-->
+            <img src="images/cakes/black_berry.webp" alt="Блек Бері"/><img id="midPict" src="images/Cakes/konkord.webp" alt="Конкорд"/><img src="images/Cakes/Vanil_shu.webp" alt="Ванільне Шу"/>
          </div>
-         <div class="cake_text">
-            <a href="menu_cake.html#Fruit"><h1>Ягідні/Фруктові</h1></a><a href="menu_cake.html#Chocolate">
-            <h1 id="mt">Шоколадні</h1></a><a href="menu_cake.html#Another"><h1>Інші</h1></a>
+         <div id="cake_text_bottom"><!--текст-->
+            <a href="menu_cake.html#Fruit"><h2>Ягідні/Фруктові</h2></a><a href="menu_cake.html#Chocolate">
+            <h2 id="mt">Шоколадні</h2></a><a href="menu_cake.html#Another"><h2>Інші</h2></a>
+         </div>
+     </div>
+     <div class="Drinks"><!--Напої-->
+         <div id="drinks_text_top"><!--текст-->
+             <a href="menu_drink.html"><h2>Напої</h2></a>
+         </div>
+         <div id="drinks_img"><!--фото-->
+             <img id="LeftPhoto" src="images/Drinks/coffeeCup1.webp" alt="Чашка кофе"/><img src="images/Drinks/coffeeCup2.webp" alt="Чашка кофе"/>
+         </div>
+         <div id="drinks_text_bottom"><!--текст-->
+            <a href="menu_drink.html/#coffe"><h2>Кофе</h2></a><a href="menu_drink.html/#coldHot"><h2 id="mt">Гарячі/Холодні напої</h2></a><a href="menu_drink.html/#tea"><h2>Чаї</h2></a>
+         </div>
+     </div>
+     <div class="souvenir"><!--Сувеніри-->
+         <div id="souvenir_top"><!--текст-->
+            <a href="menu_souvenir.html"><h2>Сувеніри</h2></a> 
+         </div>
+         <div id="souvenir_photo"><!--фото-->
+             <img id="topiar" src="images/Souvenirs/topiar.webp" alt="колаж"><img id="midPict" src="images/Souvenirs/pict2.webp"><img src="images/Souvenirs/mish2.webp">
+         </div>
+         <div id="souvenir_bottom"><!--текст-->
+             <a href="menu_souvenir.html/#topiar"><h2>Топіарчики</h2></a><a href="menu_souvenir/#pictures"><h2 id="mt">Картини з кави</h2></a><a href="menu_souvenir.html/#game"><h2>Іграшки</h2></a>
          </div>
      </div>
     </div>
+    <footer class="bottom"><!--Низ сайта-->
+        <div class="info">
+            <h1>Контакти</h1>
+            <ul>
+                <li>+380663928283</li><!--Номер телефону підтримки-->
+                <li>totemukr@gmail.com</li><!--Почта тех підтримкм-->
+            </ul>
+        </div>
+        <a href="https://goo.gl/maps/eMBaVVdScvFwtU8m9"><img src="images/Icons/map.webp" alt="GoogleMaps"/></a><!--Google Maps-->
+        <a href="https://www.facebook.com/coffeTOTEM"><img src="images/Icons/facebook.webp" alt=""/></a><!--Facebook іконка-->
+        <a href="https://www.instagram.com/just_sanyok_hal/?hl=uk"><img src="images/Icons/insta.webp" alt=""/></a><!--Instagram іконка-->
+        <h1>© 2020  Totem  Coffee Company.  Всі  права  захищені.</h1>
+    </footer>
 </body>

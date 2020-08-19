@@ -1,0 +1,39 @@
+/*-----------------------Основні настройки-----------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Alegreya SC', serif;
+}
+a{
+	text-decoration: none;
+}
+.Top{
+	border-bottom: 1px solid black;
+}
+img{
+	width:25%;
+}
+ul{
+	padding-bottom: 1%;
+    padding-top: 1%;
+}
+/*-----------------------Лого та налаштування---------------------*/
+.Top h1{/*Лого */
+	animation-name: opac;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	color:#FF8552;
+	font-size: 10vw;
+	text-align: center;
+	padding-top: 1%;
+	-webkit-text-stroke: 1px #000000;
+}
+@keyframes opac{/*Анімація появи фото*/
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
