@@ -74,19 +74,6 @@ ul{
 .Cakes img{
 	width:30%;
 }
-#mt{
-	padding-left: 5%;
-	padding-right: 5%;
-}
-#cake_text_bottom{
-	padding-top: 2%;
-	padding-bottom: 2%;
-	font-size: 2vw;
-}
-#cake_text_bottom h2{
-	color: black;
-	display: inline;
-}
 #cake_text_top{
 	margin-bottom: 1%;
 	color:#38ae7e;
@@ -128,17 +115,6 @@ ul{
 	margin-bottom: 2%;
 	border-bottom: black solid 1px;
 	border-top: black solid 1px;
-}
-#drinks_text_bottom h2{
-	display: inline;
-	color:black;
-	text-align: center;
-}
-#drinks_text_bottom{
-	padding-top: 2%;
-	padding-bottom: 2%;
-	font-size: 2vw;
-	text-align: center;
 }
 #drinks_text_top{
 	margin-bottom: 1%;
@@ -213,16 +189,7 @@ ul{
 	color:#38ae7e;
 	-webkit-text-stroke: 1px #000000;
 }
-#souvenir_bottom h2{
-	display: inline;
-	color:black;
-}
-#souvenir_bottom{
-	text-align: center;
-	padding-bottom: 2%;
-	padding-top: 2%;
-	font-size: 2vw;
-}
+
 #souvenir img{
 	width:25%;
 }
