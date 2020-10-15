@@ -1,51 +1,115 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<link rel="stylesheet" href="style.css">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Totem</title>
-    <link rel="icon" href="images/icons/Icon.ico" type="images/x-icon"/>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Store Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <link rel="icon" href="Images/Logo/Icon.ico" type="images/x-icon">
 </head>
+
 <body>
-	<div class="Top"><!--Лого-->
-		<h1>TOTEM</h1>
-	</div>
-	<br/><br/><br/>
-	<div class="block"><!--Графік роботи-->
-		<h1>Графік роботи:</h1><br/>
-		<p>Понеділок - П'ятниця</p><br/>
-		<p>З  9:00  до  18:00</p>
-	</div>
-	<br/><br/><br/>
-	<div class="photo"><!--Фото чашки кавою-->
-		<img src="images/Drinks/coffeeCup1.webp" alt=""/>
-	</div>
-	<br/><br/><br/>
-	<div class="block"><!--Блок з кавою-->
-		<h1>100% Арабіка</h1>
-		<p>В ассортименті наявна кава 
-		</br>на будь який смак</p>
-	</div>
-</br></br></br>
-</br></br></br>
-	<div class="block"><!--Блок Меню-->
-		<a href="menu.html"><h1 id="Menu_txt">Меню</h1></a><!--Ссилка на меню-->
-		<p>Наше меню представлене великим ассортиментом
-			тістечок та кави</p>
-	</div>
-</br></br></br>
-</br></br></br>
-	<footer class="bottom"><!--Контактні дані та ссилки-->
-		<div class="info">
-			<h1>Контакти</h1>
-			<ul>
-				<li>+380663928283</li><!--Номер телефону підтримки-->
-				<li>totemukr@gmail.com</li><!--Почта тех підтримкм-->
-			</ul>
-		</div>
-		<a href="https://goo.gl/maps/eMBaVVdScvFwtU8m9"><img src="images/icons/map.webp" alt="GoogleMaps"/></a><!--Google Maps-->
-		<a href="https://www.facebook.com/coffeTOTEM"><img src="images/icons/facebook.webp" alt=""/></a><!--Facebook іконка-->
-		<a href="https://www.instagram.com/just_sanyok_hal/?hl=uk"><img src="images/icons/insta.webp" alt=""/></a><!--Instagram іконка-->
-		<h1>© 2020  Totem  Coffee Company.  Всі  права  захищені.</h1>
-	</footer>
-</body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="Main-page">
+                <div class="menu">
+                    <!--Меню-->
+                    <img src="Images/Logo/logo.png" alt="Logo">
+                    <h1 id="Main-Page-Name">Name</h1>
+                    <nav>
+                        <a href="#PC">Pc</a>
+                        <a href="#Headset">Accessories</a>
+                        <a href="#Foot">Social Networks</a>
+                    </nav>
+
+                </div>
+                <div class="Main-part">
+                    <h2 id="Main-Page-Text">
+                        America’s #1 Best <br>
+                        Computers Shop
+                    </h2>
+                </div>
+            </div>
+            <div class="About-Us">
+                <!--Блок про Нас-->
+                <h2 id="About-Us-Name">Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut aliquip ex ea <br>commodo consequat. Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla <br>pariatur. Excepteur sint occaecat cupidatat non proident, <br>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="About-Us-Review">
+                    <div class="Card">
+                        <img src="Images/Icons/guarantee-96.png" alt="100% Warranty"><br>
+                        <h3>100% Warranty</h3>
+                    </div>
+                    <div class="Card">
+                        <img src="Images/Icons/quality96.png" alt="Great Quality"><br>
+                        <h3>Great Quality</h3>
+                    </div>
+                    <div class="Card">
+                        <img src="Images/Icons/shipping96.png" alt="Fast Shipping"><br>
+                        <h3>Fast Shipping</h3>
+                    </div>
+                </div>
+            </div>
+            <!--Асортимент Комп'ютерів-->
+            <div name="PC" class="Pc-Assort">
+                <h2 id="Pc-Assort-Name">Pc Assortment</h2>
+                <div class="Pc-Assort-Card">
+                    <img src="Images/Computers/Deluxe.png" alt="Deluxe pc">
+                    <h3>Name<br>
+                        Price - 99,999$</h3>
+                </div>
+                <div class="Pc-Assort-Card">
+                    <img src="Images/Computers/Asus.png" alt="Asus pc">
+                    <h3>Name<br>
+                        Price - 99,999$</h3>
+                </div>
+                <div class="Pc-Assort-Card">
+                    <img src="Images/Computers/exp.png" alt="Expensive pc">
+                    <h3>Name<br>
+                        Price - 99,999$</h3>
+                </div>
+            </div>
+            <!--Асортимент Гарнітури-->
+            <div name="Headset" class="Access-assort">
+                <h2 id="Access-Name">Headset Assortment</h2>
+                <h2 id="Access-SubName">Most Selling items</h2>
+                <div class="Access-Card">
+                    <img src="Images/Accesories/Headset.png" alt="Headset">
+                    <h3>Name<br>Price</h3>
+                </div>
+                <div class="Access-Card">
+                    <img src="Images/Accesories/Keyboard.png" alt="Keyboard">
+                    <h3>Name<br>Price</h3>
+                </div>
+                <div class="Access-Card">
+                    <img src="Images/Accesories/RazerMamba.png" alt="Mouse">
+                    <h3>Name<br>Price</h3>
+                </div>
+            </div>
+        </div>
+        <!--Соціальні Мережі-->
+        <footer name="Foot">
+            <div class="Main-Back">
+                <h3>Join Our Team in social</h3>
+            </div>
+            <div class="Footer-Card-First">
+                <a href="#"><img src="Images/Icons/youtube96.png" alt="Youtube"></a>
+                <h3>Youtube</h3>
+            </div>
+            <div class="Footer-Card">
+                <a href="#"><img src="Images/Icons/whatsapp96.png" alt="WhatsApp"></a>
+                <h3>WhatsApp</h3>
+            </div>
+            <div class="Footer-Card">
+                <a href="#"><img src="Images/Icons/facebook96.png" alt="Facebook"></a>
+                <h3>Facebook</h3>
+            </div>
+            <div class="Footer-Card">
+                <a href="#"><img src="Images/Icons/instagram-96.png" alt="Instagram"></a>
+                <h3>Instagram</h3>
+            </div>
+        </footer>
+    </div>
+</body></html>

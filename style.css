@@ -1,118 +1,406 @@
-*{/*Основні налаштування*/
-	margin: 0;
-	padding: 0;
-	font-family: 'Alegreya SC', serif;
-}
-a{/*Ссилки*/
-	text-decoration: none;
-}
-.Top{/*Лого*/
-	border-bottom: 1px solid black;
-}
-img{/*Настройки фоток*/
-	width:25%;
-}
-ul{
-	padding-bottom: 1%;
-	text-align: center;
-	padding-top: 1%;
-}
-.Top h1{/*Лого */
-	animation-name: opac;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-	color:#FF8552;
-	font-size: 10vw;
-	text-align: center;
-	padding-bottom: 2%;
-	padding-top: 2%;
-	-webkit-text-stroke: 1px #000000;
-}
-.photo img{/*Фото кави*/
-	width: 50%;
-	padding-bottom: 2%;
-	padding-left: 25%;
-	animation-name: trans;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-}
-@keyframes trans{/*Анімація появи фото*/
-	0%{
-		width: 0%;
-		padding-bottom: 2%;
-		visibility: hidden;
-		padding-left: 50%;
-		opacity: 0%;
-	}
-	100%{
-		width: 50%;
-		padding-bottom: 2%;
-		padding-left: 25%;
-		visibility: visible;
-		opacity: 100%;
-	}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+
 }
 
-.block h1{/*Основні блоки з інформацією*/
-	padding-top: 2%;
-	text-align: center;
-	font-size: 5vw;
-	color:#38ae7e;
-	-webkit-text-stroke: 1px #000000;
+/*-------------Wrapper----------------*/
+.wrapper {
+    width: 100%;
+    background: #011627;
 }
-.block{
-	background-color: #FF8552;
-	width:70%;
-	margin-left: 15%;
-	border:1px solid black;
-	padding-top: 2%;
-	padding-bottom: 2%;
+
+/*--------------Main Page Menu---------------*/
+#Main-Page-Name {
+    margin-right: 10%;
+    max-height: 15vh;
+    font-size: 7.5vh;
+    color: #FDFFFC;
 }
-.block p{
-	text-align: center;
-	font-size:3vw;
-	color: #38ae7e;
-	padding-bottom: 2%;
-	-webkit-text-stroke: 1px #000000;
+
+.menu a:hover {
+    transition-timing-function: linear;
+    color: #F71735;
+    transition-duration: 500ms;
 }
-.bottom{/*Блок з контактними даними*/
-	align-items:center;
-	padding-top: 10%;
-	width:100%;
-	background-color: #D8D8D8;
+
+.menu {
+
+    display: flex;
+    height: 15vh;
+
+    flex-direction: row;
 }
-.bottom img{
-	width:5%;
-	margin-left: 21.25%;
-	margin-bottom: 3%;
+
+.menu img {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    max-height: 15vh;
+    max-width: 15vh;
 }
-.bottom h1{
-	text-align: center;
-	word-spacing: 2%;
-	font-size: 3vw;
+
+.menu a {
+    margin: 0 5vh 0 5vh;
+    font-size: 7.5vh;
+    color: #FF9F1C;
+    text-decoration: none;
 }
-.info ul{/*Контактна інформація*/
-	font-size: 3vw;
+
+.menu nav {
+    max-height: 15vh;
 }
-.info h1{
-	font-size: 5vw;
+
+/*----------------------Main Page Main Part---------------------------*/
+.Main-part {
+    width: 100%;
+    background-image: url(Images/Background/Main.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
 }
-.info li{
-	padding-bottom: 1%;
+
+.Main-part h2 {
+    padding-top: 20vh;
+
+    padding-left: 10vh;
+    font-size: 10vh;
+    color: #FDFFFC;
 }
-.info {
-	margin-bottom: 2%;
+
+/*--------------------------About Us---------------------------------*/
+@keyframes About-Us {
+    from {
+        color: #F71735;
+    }
+
+    to {
+        color: #41EAD4;
+    }
 }
-#Menu_txt{
-	text-decoration: underline;
+
+@keyframes About-Us-Back {
+    from {
+        color: #41EAD4;
+    }
+
+    to {
+        color: #F71735;
+    }
 }
-@keyframes opac{/*Анімація появи фото*/
-	0%{
-		opacity: 0%;
-	}
-	100%{
-		opacity: 100%;
-	}
+
+
+@keyframes About-Us-Img {
+    from {
+        width: 70%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes About-Us-Img-Back {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+.About-Us {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#About-Us-Name {
+    text-align: center;
+    padding-bottom: 2vh;
+    font-size: 7vh;
+    color: #F71735;
+}
+
+#About-Us-Name:hover {
+
+    transition-timing-function: linear;
+    color: #41EAD4;
+    transition-duration: 500ms;
+}
+
+
+.About-Us p {
+    text-align: center;
+    color: #FDFFFC;
+    font-size: 2vh;
+    padding-bottom: 5vh;
+}
+
+.About-Us-Review {
+    display: inline-block;
+    color: #41EAD4;
+    font-size: 4vh;
+}
+
+.Card {
+    text-align: center;
+    width: 20vw;
+    display: inline-block;
+    animation: About-Us-Back .3s linear;
+    animation-fill-mode: both;
+}
+
+.Card:hover {
+    animation: About-Us .3s linear;
+    animation-fill-mode: both;
+}
+
+.Card img {
+    width: 70%;
+    animation: About-Us-Img-Back .3s linear;
+    animation-fill-mode: both;
+}
+
+.Card img:hover {
+    animation: About-Us-Img .3s linear;
+    animation-fill-mode: both;
+
+}
+
+/*----------------Pc Assortment-----------*/
+@keyframes Pc-Assort {
+    from {
+        color: #41EAD4;
+    }
+
+    to {
+        color: #F71735;
+    }
+}
+
+@keyframes Pc-Assort-Back {
+    from {
+        color: #F71735;
+    }
+
+    to {
+        color: #41EAD4;
+    }
+}
+
+
+@keyframes Pc-Assort-Img {
+    from {
+        width: 70%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes Pc-Assort-Img-Back {
+    from {
+        width: 90%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+
+.Pc-Assort {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+#Pc-Assort-Name {
+    font-size: 7vh;
+    text-align: center;
+    color: #FF9F1C;
+    padding-bottom: 3vh;
+}
+
+.Pc-Assort-Card {
+    display: inline-block;
+    text-align: center;
+    color: #41EAD4;
+    font-size: 4vh;
+    width: 30vw;
+    animation: Pc-Assort-Back .3s linear;
+    animation-fill-mode: both;
+}
+
+.Pc-Assort-Card img {
+    width: 70%;
+    animation: Pc-Assort-Img-Back .3s linear;
+    animation-fill-mode: both;
+}
+
+.Pc-Assort-Card:hover {
+    animation: Pc-Assort .3s linear;
+    animation-fill-mode: both;
+}
+
+.Pc-Assort-Card img:hover {
+    animation: Pc-Assort-Img .3s linear;
+    animation-fill-mode: both;
+
+}
+
+/*--------------------Headset Assortment--------------------*/
+@keyframes Hd-Assort {
+    from {
+        color: #F71735;
+    }
+
+    to {
+        color: #41EAD4;
+    }
+}
+
+@keyframes Hd-Assort-Back {
+    from {
+        color: #41EAD4;
+    }
+
+    to {
+        color: #F71735;
+    }
+}
+
+
+@keyframes Hd-Assort-Img {
+    from {
+        width: 70%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes Hd-Assort-Img-Back {
+    from {
+        width: 90%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+#Access-Name {
+    text-align: center;
+    font-size: 7vh;
+    color: #FF9F1C;
+}
+
+#Access-SubName {
+    padding-bottom: 10vh;
+    text-align: center;
+    font-size: 5vh;
+    color: #F71735;
+}
+
+.Access-assort {
+    text-align: center;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+}
+
+.Access-Card {
+    display: inline-block;
+    text-align: center;
+    color: #F71735;
+    font-size: 4vh;
+    width: 30vw;
+    animation: Hd-Assort-Back .3s linear;
+    animation-fill-mode: both;
+}
+
+.Access-Card img {
+    width: 70%;
+    animation: Hd-Assort-Img-Back .3s linear;
+    animation-fill-mode: both;
+}
+.Access-Card img:hover {
+    animation: Hd-Assort-Img .3s linear;
+    animation-fill-mode: both;
+}
+
+.Access-Card:hover {
+    animation: Hd-Assort .3s linear;
+    animation-fill-mode: both;
+}
+/*------------------------Footer---------------------------------*/
+@keyframes Footer {
+    from {
+        color: #F71735;
+    }
+
+    to {
+        color: #41EAD4;
+    }
+}
+
+@keyframes Footer-Back {
+    from {
+        color: #41EAD4;
+    }
+
+    to {
+        color: #F71735;
+    }
+}
+
+.Main-Back {
+    text-align: center;
+    background-image: url(Images/Background/Headset.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.Main-Back h3 {
+    padding-top: 25vh;
+    color: #FDFFFC;
+    font-size: 10vh;
+}
+
+.Footer-Card {
+    padding-top: 10vh;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    color: #F71735;
+    font-size: 4vh;
+    width: 20vw;
+    animation: Footer-Back .3s linear;
+    animation-fill-mode: both;
+}
+
+.Footer-Card-First {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    color: #F71735;
+    font-size: 4vh;
+    width: 20vw;
+    padding-left: 10vw;
+    animation: Footer-Back .3s linear;
+    animation-fill-mode: both;
+}
+.Footer-Card-First:hover{
+    animation: Footer .3s linear;
+    animation-fill-mode: both;
+}
+.Footer-Card:hover{
+    animation: Footer .3s linear;
+    animation-fill-mode: both;
 }
