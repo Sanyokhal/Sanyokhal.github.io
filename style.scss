@@ -1,0 +1,537 @@
+$backcolor:#18191e;
+$maincolor1:#f8e000;
+$maincolor2:#D1D2D4;
+$mainwidth:1152px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trispace', sans-serif;
+}
+
+body {
+    background: $backcolor;
+    min-width: 1440px;
+}
+
+a {
+    color: $maincolor1;
+    text-decoration: none;
+}
+
+/*----------Wrapper----------*/
+.wrapper {
+    color: $maincolor1;
+    width: $mainwidth;
+    background: $backcolor;
+    color: $maincolor1;
+}
+
+/*----------First PART----------*/
+
+.first-part {
+    height: 1080px;
+
+    .first-part__menu {
+        top: 0;
+        left: 0;
+        padding-left: 144px;
+        padding-right: 144px;
+        width: $mainwidth;
+        display: flex;
+        height: 216px;
+        flex-direction: row;
+        justify-content: space-between;
+        background: rgb(24, 25, 30);
+
+        a {
+            color: $maincolor1;
+            font-size: 36px;
+            text-decoration: none;
+            line-height: 216px;
+            transition-duration: 1s;
+            transition-property: color;
+        }
+
+        a:hover {
+            color: #ffa600;
+            transition-duration: 1s;
+        }
+
+        img {
+            padding-top: 81px;
+            width: 72px;
+            height: 72px;
+            transition-duration: 1s;
+        }
+
+        img:hover {
+            transition-duration: 1s;
+            width: 58px;
+            height: 58px;
+        }
+
+
+    }
+
+    @keyframes activation {
+        0% {
+            top: -216px;
+        }
+
+        100% {
+            top: 0;
+        }
+
+    }
+
+    .active {
+        animation-duration: 1s;
+        animation-name: activation;
+        position: fixed;
+        background: rgba(24, 25, 30, 0.9);
+        height: 108px;
+        a {
+            line-height: 108px;
+        }
+
+
+        img {
+            padding-top: 18px;
+        }
+    }
+    .move{
+        padding-top: 216px;
+    }
+
+    .first-part__content {
+        margin-left: 144px;
+        width: $mainwidth;
+        height: 864px;
+        display: flex;
+        flex-direction: column;
+
+
+        h2 {
+            font-weight: 800;
+            padding-top: 54;
+            font-size: 150px;
+        }
+
+        p {
+            color: $maincolor2;
+            width: 864px;
+            margin-left: 0;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        a {
+            margin-left: 72px;
+            border: 2px solid $maincolor1;
+            width: 288px;
+            text-align: center;
+            height: 54px;
+            line-height: 54px;
+            border-radius: 30px;
+            color: $maincolor2;
+            transition-duration: 1s;
+            transition-property: color, border, background;
+        }
+
+        a:hover {
+            border-color: $backcolor;
+            background: $maincolor1;
+            color: $backcolor;
+            transition-duration: 1s;
+        }
+    }
+}
+
+/*----------Middle PART----------*/
+.middle {
+    width: 1440px;
+    text-align: center;
+    height: 216px;
+    line-height: 108px;
+    color: $backcolor;
+    font-size: 20px;
+
+    p {
+        background: #feda00;
+        height: 216px;
+        width: 1440px;
+    }
+}
+
+/*-----------Second PART--------------*/
+.second-part {
+    background: white;
+    width: 1440px;
+
+    .second-part__top {
+        width: $mainwidth;
+        height: 432px;
+        display: flex;
+        background: white;
+        flex-direction: row;
+        padding-left: 144px;
+
+        .card {
+            padding-top: 108px;
+            background: white;
+            width: 360px;
+
+            p {
+                background: white;
+                color: $backcolor;
+            }
+
+            img {
+                background: $maincolor1;
+            }
+
+            h2 {
+                line-height: 54px;
+                font-weight: 400;
+                background: white;
+            }
+        }
+
+    }
+
+    .second-part__top:first-child {
+        margin-left: 36px;
+    }
+
+    .second-part__button {
+        width: $mainwidth;
+        background: white;
+        text-align: center;
+        height: 108px;
+        padding-left: 144px;
+
+        a {
+            padding: 22px 72px 22px 72px;
+            background: white;
+            color: $backcolor;
+            border: 2px solid $maincolor1;
+            border-radius: 30px;
+            transition-property: color, border, background;
+            transition-duration: 1s;
+        }
+
+        a:hover {
+            color: $backcolor;
+            border-color: white;
+            background: $maincolor1;
+            transition-duration: 1s;
+        }
+    }
+
+
+    .second-part__bottom {
+        padding-left: 144px;
+        background: $backcolor;
+        padding-top: 54px;
+        padding-bottom: 54px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+
+        .bottom-card {
+            width: 288px;
+
+            h2 {
+                padding: 22px 0 22px 0;
+                color: white;
+                font-size: 40px;
+                font-weight: 300;
+            }
+
+            h3 {
+                font-weight: 200;
+            }
+
+            img {
+                width: 72px;
+                transition-duration: 1s;
+            }
+
+            img:hover {
+                width: 86px;
+                transition-duration: 1s;
+            }
+        }
+    }
+}
+
+.gap-second-third {
+    width: 1440px;
+    background: white;
+    height: 432px;
+
+
+    h2 {
+        padding-left: 144px;
+        padding-top: 54px;
+        padding-bottom: 54px;
+        font-size: 60px;
+        font-weight: 300;
+    }
+
+    p {
+        padding-left: 144px;
+        color: $backcolor;
+        padding-bottom: 54px;
+    }
+
+    a {
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        color: $backcolor;
+        border: 2px solid $maincolor1;
+        transition-property: color, border, background;
+        transition-duration: 1s;
+    }
+
+    a:hover {
+        transition-duration: 1s;
+        color: $backcolor;
+        background: $maincolor1;
+        border-color: white;
+    }
+
+    nav {
+        padding-top: 54px;
+        text-align: center;
+    }
+
+    nav:first-child {
+        padding-left: 0;
+    }
+}
+
+.third-part {
+    width: 1440px;
+    height: 864px;
+
+    .third-part__content {
+        margin-left: 288px;
+        height: 432px;
+        width: 576px;
+        background: $maincolor1;
+    }
+
+    h2 {
+        margin-left: 72px;
+        font-size: 36px;
+        line-height: 162px;
+        font-weight: 400;
+        color: $backcolor;
+    }
+
+    p {
+        width: 432px;
+        margin-left: 72px;
+        color: white;
+        padding-bottom: 22px;
+    }
+
+    .button {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        line-height: 54px;
+        padding-left: 14px;
+        padding-right: 14px;
+        color: $backcolor;
+        border: 2px solid white;
+        margin-left: 72px;
+        transition-property: color, border, background;
+        transition-duration: 1s;
+    }
+
+    .button:hover {
+        transition-duration: 1s;
+        background: white;
+        border-color: $maincolor1;
+
+    }
+}
+
+.fourth-part {
+    .fourth-part__button {
+        background: white;
+        height: 324px;
+        width: 1440px;
+        text-align: center;
+        line-height: 324px;
+
+        a {
+            border: 2px solid $maincolor1;
+            padding: 22px 58px 22px 58px;
+            border-radius: 25px;
+            color: $backcolor;
+            transition-property: color, border, background;
+            transition-duration: 1s;
+        }
+
+        a:hover {
+            transition-duration: 1s;
+            background: $maincolor1;
+            border-color: white;
+            color: $backcolor;
+        }
+    }
+}
+
+.contact-us {
+    background: white;
+    width: 1440px;
+
+    .text {
+        width: $mainwidth;
+        margin-left: 144px;
+
+        h2 {
+            color: $maincolor1;
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        p {
+            padding-top: 32px;
+            padding-bottom: 108px;
+            color: $backcolor;
+        }
+    }
+
+    form {
+        text-align: center;
+        width: 720px;
+        margin-left: 360px;
+
+        #user {
+            padding-left: 14px;
+            border: 2px solid black;
+            height: 54px;
+            color: $backcolor;
+            width: 345px;
+            font-size: 30px;
+        }
+
+        #mail {
+            padding-left: 14, 4px;
+            border: 2px solid black;
+            margin-left: 23px;
+            height: 54px;
+            color: $backcolor;
+            width: 302px;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+
+        #subject {
+            padding-left: 14, 4px;
+            border: 2px solid black;
+            height: 54px;
+            color: $backcolor;
+            width: 706px;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+
+        #textar {
+            padding-left: 14, 4px;
+            width: 706px;
+            color: $backcolor;
+            font-size: 24px;
+            border: 2px solid black;
+        }
+
+        button {
+            margin-bottom: 32px;
+            margin-top: 22px;
+            width: 288px;
+            height: 81px;
+            border-radius: 30px;
+            border: 2px solid $maincolor1;
+            font-size: 24px;
+            background: white;
+            transition-property: color, border, background;
+            transition-duration: 1s;
+        }
+
+        button:hover {
+            transition-duration: 1s;
+            color: $backcolor;
+            background: $maincolor1;
+
+        }
+    }
+}
+
+footer {
+    width: 1440px;
+
+    .top {
+        height: 216px;
+        background: $maincolor1;
+        display: flex;
+        flex-direction: row;
+        width: 1440px;
+        text-align: center;
+
+        :first-child {
+            margin-left: 108px;
+        }
+
+        .card {
+            margin-top: 108px;
+            line-height: 72px;
+            width: 432px;
+            height: 72px;
+            display: flex;
+            flex-direction: row;
+
+            h3 {
+                padding-left: 29px;
+                color: $backcolor;
+                transition-duration: 1s;
+            }
+
+            h3:hover {
+                transition-duration: 1s;
+                font-size: 24px;
+            }
+
+            img {
+                background: $backcolor;
+                width: 72px;
+                height: 72px;
+                transition-duration: 1s;
+                transition-property: width, height;
+            }
+
+            img:hover {
+                transition-duration: 1s;
+                width: 58px;
+                height: 58px;
+            }
+        }
+    }
+
+    .bottom {
+        height: 216px;
+        background: $backcolor;
+        width: 1440px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 216px;
+        font-weight: 400;
+        color: $maincolor2;
+    }
+}
