@@ -11,9 +11,9 @@ $token = "1313215110:AAHy5saaYYo8ZVyPkQVtsfNwN859ydHaJTg";
 $chat_id = "-462672521";
 $arr = array(
   'Імя: ' => $name,
-  'Повідомлення: ' => $phone,
+  'Повідомлення: ' => $message,
   'Email' => $email,
-'Субєкт' => $subject
+  'Субєкт' => $subject
 );
 
 foreach($arr as $key => $value) {
