@@ -1,537 +1,470 @@
-$backcolor:#18191e;
-$maincolor1:#f8e000;
-$maincolor2:#D1D2D4;
-$mainwidth:1152px;
-
+@import "reset.css";
+@import "normalize.css";
+$regular:400;
+$bold:600;
+$extrabold:800;
+$light:200;
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trispace', sans-serif;
-}
-
-body {
-    background: $backcolor;
-    min-width: 1440px;
-}
-
-a {
-    color: $maincolor1;
-    text-decoration: none;
-}
-
-/*----------Wrapper----------*/
-.wrapper {
-    color: $maincolor1;
-    width: $mainwidth;
-    background: $backcolor;
-    color: $maincolor1;
-}
-
-/*----------First PART----------*/
-
-.first-part {
-    height: 1080px;
-
-    .first-part__menu {
-        top: 0;
-        left: 0;
-        padding-left: 144px;
-        padding-right: 144px;
-        width: $mainwidth;
-        display: flex;
-        height: 216px;
-        flex-direction: row;
-        justify-content: space-between;
-        background: rgb(24, 25, 30);
-
-        a {
-            color: $maincolor1;
-            font-size: 36px;
-            text-decoration: none;
-            line-height: 216px;
-            transition-duration: 1s;
-            transition-property: color;
-        }
-
-        a:hover {
-            color: #ffa600;
-            transition-duration: 1s;
-        }
-
-        img {
-            padding-top: 81px;
-            width: 72px;
-            height: 72px;
-            transition-duration: 1s;
-        }
-
-        img:hover {
-            transition-duration: 1s;
-            width: 58px;
-            height: 58px;
-        }
-
-
-    }
-
-    @keyframes activation {
-        0% {
-            top: -216px;
-        }
-
-        100% {
-            top: 0;
-        }
-
-    }
-
-    .active {
-        animation-duration: 1s;
-        animation-name: activation;
-        position: fixed;
-        background: rgba(24, 25, 30, 0.9);
-        height: 108px;
-        a {
-            line-height: 108px;
-        }
-
-
-        img {
-            padding-top: 18px;
-        }
-    }
-    .move{
-        padding-top: 216px;
-    }
-
-    .first-part__content {
-        margin-left: 144px;
-        width: $mainwidth;
-        height: 864px;
-        display: flex;
-        flex-direction: column;
-
-
-        h2 {
-            font-weight: 800;
-            padding-top: 54;
-            font-size: 150px;
-        }
-
-        p {
-            color: $maincolor2;
-            width: 864px;
-            margin-left: 0;
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-
-        a {
-            margin-left: 72px;
-            border: 2px solid $maincolor1;
-            width: 288px;
-            text-align: center;
-            height: 54px;
-            line-height: 54px;
-            border-radius: 30px;
-            color: $maincolor2;
-            transition-duration: 1s;
-            transition-property: color, border, background;
-        }
-
-        a:hover {
-            border-color: $backcolor;
-            background: $maincolor1;
-            color: $backcolor;
-            transition-duration: 1s;
-        }
-    }
-}
-
-/*----------Middle PART----------*/
-.middle {
-    width: 1440px;
-    text-align: center;
-    height: 216px;
-    line-height: 108px;
-    color: $backcolor;
-    font-size: 20px;
-
-    p {
-        background: #feda00;
-        height: 216px;
-        width: 1440px;
-    }
-}
-
-/*-----------Second PART--------------*/
-.second-part {
-    background: white;
-    width: 1440px;
-
-    .second-part__top {
-        width: $mainwidth;
-        height: 432px;
-        display: flex;
-        background: white;
-        flex-direction: row;
-        padding-left: 144px;
-
-        .card {
-            padding-top: 108px;
-            background: white;
-            width: 360px;
-
-            p {
-                background: white;
-                color: $backcolor;
-            }
-
-            img {
-                background: $maincolor1;
-            }
-
-            h2 {
-                line-height: 54px;
-                font-weight: 400;
-                background: white;
-            }
-        }
-
-    }
-
-    .second-part__top:first-child {
-        margin-left: 36px;
-    }
-
-    .second-part__button {
-        width: $mainwidth;
-        background: white;
-        text-align: center;
-        height: 108px;
-        padding-left: 144px;
-
-        a {
-            padding: 22px 72px 22px 72px;
-            background: white;
-            color: $backcolor;
-            border: 2px solid $maincolor1;
-            border-radius: 30px;
-            transition-property: color, border, background;
-            transition-duration: 1s;
-        }
-
-        a:hover {
-            color: $backcolor;
-            border-color: white;
-            background: $maincolor1;
-            transition-duration: 1s;
-        }
-    }
-
-
-    .second-part__bottom {
-        padding-left: 144px;
-        background: $backcolor;
-        padding-top: 54px;
-        padding-bottom: 54px;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-
-        .bottom-card {
-            width: 288px;
-
-            h2 {
-                padding: 22px 0 22px 0;
-                color: white;
-                font-size: 40px;
-                font-weight: 300;
-            }
-
-            h3 {
-                font-weight: 200;
-            }
-
-            img {
-                width: 72px;
-                transition-duration: 1s;
-            }
-
-            img:hover {
-                width: 86px;
-                transition-duration: 1s;
-            }
-        }
-    }
-}
-
-.gap-second-third {
-    width: 1440px;
-    background: white;
-    height: 432px;
-
-
-    h2 {
-        padding-left: 144px;
-        padding-top: 54px;
-        padding-bottom: 54px;
-        font-size: 60px;
-        font-weight: 300;
-    }
-
-    p {
-        padding-left: 144px;
-        color: $backcolor;
-        padding-bottom: 54px;
-    }
-
     a {
-        padding-left: 43px;
-        padding-right: 43px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        color: $backcolor;
-        border: 2px solid $maincolor1;
-        transition-property: color, border, background;
-        transition-duration: 1s;
-    }
-
-    a:hover {
-        transition-duration: 1s;
-        color: $backcolor;
-        background: $maincolor1;
-        border-color: white;
-    }
-
-    nav {
-        padding-top: 54px;
-        text-align: center;
-    }
-
-    nav:first-child {
-        padding-left: 0;
+        text-decoration: none;
     }
 }
 
-.third-part {
-    width: 1440px;
-    height: 864px;
+@media screen and (min-width:1200px) {
+    .Main {
+        font-family: 'Montserrat', sans-serif;
+        background-image: url(Images/background/Main%20FrameBackground.jpg);
+        background-repeat: no-repeat;
+        height: 1080px;
 
-    .third-part__content {
-        margin-left: 288px;
-        height: 432px;
-        width: 576px;
-        background: $maincolor1;
-    }
+        .container {
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 25px;
 
-    h2 {
-        margin-left: 72px;
-        font-size: 36px;
-        line-height: 162px;
-        font-weight: 400;
-        color: $backcolor;
-    }
+            .header {
+                height: 70px;
 
-    p {
-        width: 432px;
-        margin-left: 72px;
-        color: white;
-        padding-bottom: 22px;
-    }
+                h3 {
+                    font-size: 25px;
+                    font-weight: $extrabold;
+                }
 
-    .button {
-        padding-top: 11px;
-        padding-bottom: 11px;
-        line-height: 54px;
-        padding-left: 14px;
-        padding-right: 14px;
-        color: $backcolor;
-        border: 2px solid white;
-        margin-left: 72px;
-        transition-property: color, border, background;
-        transition-duration: 1s;
-    }
+                a:hover {
+                    text-decoration: underline;
+                    transition-duration: 0.5s;
+                    font-size: 20px;
+                }
 
-    .button:hover {
-        transition-duration: 1s;
-        background: white;
-        border-color: $maincolor1;
+                a {
+                    transition-duration: 0.5s;
+                    font-size: 15px;
+                    color: black;
+                    font-weight: $extrabold;
+                }
 
-    }
-}
+                p {
+                    font-size: 15px;
+                    font-weight: $extrabold;
+                }
 
-.fourth-part {
-    .fourth-part__button {
-        background: white;
-        height: 324px;
-        width: 1440px;
-        text-align: center;
-        line-height: 324px;
+                nav {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    line-height: 70px;
+                }
 
-        a {
-            border: 2px solid $maincolor1;
-            padding: 22px 58px 22px 58px;
-            border-radius: 25px;
-            color: $backcolor;
-            transition-property: color, border, background;
-            transition-duration: 1s;
-        }
-
-        a:hover {
-            transition-duration: 1s;
-            background: $maincolor1;
-            border-color: white;
-            color: $backcolor;
-        }
-    }
-}
-
-.contact-us {
-    background: white;
-    width: 1440px;
-
-    .text {
-        width: $mainwidth;
-        margin-left: 144px;
-
-        h2 {
-            color: $maincolor1;
-            font-size: 50px;
-            font-weight: 400;
-        }
-
-        p {
-            padding-top: 32px;
-            padding-bottom: 108px;
-            color: $backcolor;
-        }
-    }
-
-    form {
-        text-align: center;
-        width: 720px;
-        margin-left: 360px;
-
-        #user {
-            padding-left: 14px;
-            border: 2px solid black;
-            height: 54px;
-            color: $backcolor;
-            width: 345px;
-            font-size: 30px;
-        }
-
-        #mail {
-            padding-left: 14, 4px;
-            border: 2px solid black;
-            margin-left: 23px;
-            height: 54px;
-            color: $backcolor;
-            width: 302px;
-            font-size: 24px;
-            margin-bottom: 22px;
-        }
-
-        #subject {
-            padding-left: 14, 4px;
-            border: 2px solid black;
-            height: 54px;
-            color: $backcolor;
-            width: 706px;
-            font-size: 24px;
-            margin-bottom: 22px;
-        }
-
-        #textar {
-            padding-left: 14, 4px;
-            width: 706px;
-            color: $backcolor;
-            font-size: 24px;
-            border: 2px solid black;
-        }
-
-        button {
-            margin-bottom: 32px;
-            margin-top: 22px;
-            width: 288px;
-            height: 81px;
-            border-radius: 30px;
-            border: 2px solid $maincolor1;
-            font-size: 24px;
-            background: white;
-            transition-property: color, border, background;
-            transition-duration: 1s;
-        }
-
-        button:hover {
-            transition-duration: 1s;
-            color: $backcolor;
-            background: $maincolor1;
-
-        }
-    }
-}
-
-footer {
-    width: 1440px;
-
-    .top {
-        height: 216px;
-        background: $maincolor1;
-        display: flex;
-        flex-direction: row;
-        width: 1440px;
-        text-align: center;
-
-        :first-child {
-            margin-left: 108px;
-        }
-
-        .card {
-            margin-top: 108px;
-            line-height: 72px;
-            width: 432px;
-            height: 72px;
-            display: flex;
-            flex-direction: row;
-
-            h3 {
-                padding-left: 29px;
-                color: $backcolor;
-                transition-duration: 1s;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
             }
 
-            h3:hover {
-                transition-duration: 1s;
-                font-size: 24px;
+            .offer-zone {
+                padding-top: 200px;
+                padding-bottom: 100px;
+
+                h1 {
+                    width: 500px;
+                    font-size: 50px;
+                    font-weight: $bold;
+                    padding: 20px 0;
+                }
+
+                h2 {
+                    width: 500px;
+                    font-size: 30px;
+                    font-weight: $regular;
+                    padding-bottom: 50px;
+                }
+
+                a {
+                    margin-bottom: 30px;
+                    padding: 20px 20px;
+                    width: 300px;
+                    background-color: #FF0000;
+                    color: black;
+                    font-weight: $extrabold;
+                    border-radius: 30px;
+                }
             }
 
-            img {
-                background: $backcolor;
-                width: 72px;
-                height: 72px;
-                transition-duration: 1s;
-                transition-property: width, height;
+            .cards {
+                width: 700px;
+                display: flex;
+                justify-content: space-between;
+
+                .card {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 30px;
+                    background-color: white;
+
+                    img {
+                        width: 200px;
+                        padding-left: 50px;
+                    }
+
+                    h3 {
+                        width: 300px;
+                        height: 50px;
+                        font-size: 20xp;
+                        text-decoration: underline;
+                        font-weight: $bold;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .products {
+        font-family: 'Montserrat', sans-serif;
+        background-image: url(Images/background/ProductsBackground.png);
+        background-repeat: no-repeat;
+        height: 1080px;
+
+        .container {
+            width: 80%;
+            margin-left: 10%;
+
+            #pageName {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                font-size: 60px;
+                font-weight: $bold;
             }
 
-            img:hover {
-                transition-duration: 1s;
-                width: 58px;
-                height: 58px;
+            .food {
+                padding-bottom: 50px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .box-name {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: white;
+                    border-radius: 30px;
+                    height: 80px;
+                    font-size: 50px;
+                    font-weight: $extrabold;
+                    text-align: center;
+                    line-height: 80px;
+                }
+
+                .card {
+                    border: 1px solid black;
+                    height: 250px;
+                    background: white;
+                    border-radius: 30px;
+                    width: 250px;
+
+                    img {
+                        width: 150px;
+                        padding-left: 50px;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 20px;
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        margin-left: 65px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        width: 100px;
+                        height: 40px;
+                        margin-bottom: 10px;
+                        line-height: 40px;
+                        font-size: 20px;
+                        font-weight: $bold;
+                        color: black;
+                        border: 1px solid black;
+                        border-radius: 20px;
+                        transition-duration: 0.5s;
+                    }
+
+                    a:hover {
+                        transition-duration: 0.5s;
+                        background: black;
+                        border-color: white;
+                        color: white;
+                    }
+                }
+            }
+
+            .accesories {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .box-name {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: white;
+                    border-radius: 30px;
+                    height: 80px;
+                    font-size: 50px;
+                    font-weight: $extrabold;
+                    text-align: center;
+                    line-height: 80px;
+                }
+
+                .card {
+                    border: 1px solid black;
+                    height: 250px;
+                    background: white;
+                    border-radius: 30px;
+                    width: 250px;
+
+                    img {
+                        width: 150px;
+                        padding-left: 50px;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 20px;
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        margin-left: 65px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        width: 100px;
+                        height: 40px;
+                        margin-bottom: 10px;
+                        line-height: 40px;
+                        font-size: 20px;
+                        font-weight: $bold;
+                        color: black;
+                        border: 1px solid black;
+                        border-radius: 20px;
+                        transition-duration: 0.5s;
+                    }
+
+                    a:hover {
+                        transition-duration: 0.5s;
+                        background: black;
+                        border-color: white;
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .about-us {
+        font-family: 'Montserrat', sans-serif;
+        background-image: url(Images/background/About-UsBackground.png);
+        background-repeat: no-repeat;
+        height: 1080px;
+
+        .container {
+            width: 80%;
+            margin-left: 10%;
+
+            #About {
+                padding: 20px 0;
+                font-size: 50px;
+                font-weight: $bold;
+            }
+
+            #whyWe {
+                width: 50%;
+                margin-left: 25%;
+                font-size: 50px;
+                font-weight: $bold;
+                text-align: center;
+                height: 100px;
+                line-height: 100px;
+                background: white;
+                border-radius: 30px;
+                margin-bottom: 50px;
+            }
+
+            .advantages {
+                height: 150px;
+                width: 60%;
+                display: flex;
+                font-size: 25px;
+                font-weight: $regular;
+                flex-direction: row;
+                margin-bottom: 50px;
+                line-height: 150px;
+
+                img {
+                    height: 150px;
+                    width: 150px;
+                    background: white;
+                    border-radius: 20px;
+                }
+
+                h3 {
+                    padding-left: 20px;
+                }
+            }
+
+            .advantages1 {
+                font-size: 25px;
+                font-weight: $regular;
+                height: 150px;
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 50px;
+                line-height: 50px;
+
+                img {
+                    height: 150px;
+                    width: 150px;
+                    background: white;
+                    border-radius: 20px;
+                }
+
+                h3 {
+                    padding-left: 20px;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        font-family: 'Montserrat', sans-serif;
+        height: 880px;
+        background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+
+        .container {
+            padding-left: 10%;
+            width: 80%;
+
+            .offer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .maps {
+                padding-top: 50px;
+                text-align: center;
+                width: 800px;
+
+                h2 {
+                    padding-bottom: 20px;
+                    font-size: 25px;
+                    font-weight: $bold;
+                }
+            }
+
+            .phone {
+                margin-top: 50px;
+                width: 300px;
+                border-radius: 30px;
+                background: white;
+                border: 1px solid black;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h2 {
+                    text-align: center;
+                    padding-top: 10px;
+                    font-size: 25px;
+                    font-weight: $regular;
+                }
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                .download {
+                    line-height: 70px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-weight: $bold;
+                        width: 50%;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
 
     .bottom {
-        height: 216px;
-        background: $backcolor;
-        width: 1440px;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background-color: white;
         text-align: center;
-        font-size: 30px;
-        line-height: 216px;
-        font-weight: 400;
-        color: $maincolor2;
+
+        h2 {
+            height: 50px;
+            line-height: 50px;
+            background: white;
+            font-size: 40px;
+            padding-bottom: 50px;
+        }
+
+        h3 {
+            height: 70px;
+            line-height: 70px;
+            font-size: 40px;
+            font-weight: $bold;
+            padding: 20px 0;
+        }
+
+        .holder {
+            width: 80%;
+            padding-left: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 70px;
+        }
+    }
+#popUp{
+    position: fixed;
+    background: white;
+    border: 1px solid black;
+    line-height: 50px;
+    font-size: 20x;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    top:50px;
+    left: 860px;
+    visibility: hidden;
+    transition-property: visibility;
+    transition-duration: 1s;
+    }
+.active{
+    visibility: visible;
     }
 }
