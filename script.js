@@ -1,5 +1,5 @@
-var popUp = document.getElementsByClassName("popup");
-function Activate() {
-    popUp.classList.add("active");
-}
-
+$(function(){
+    $('.MenuIcon').click(function(){
+        $('.link').addClass('show')
+    })
+});

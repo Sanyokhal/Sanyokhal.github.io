@@ -1,12 +1,298 @@
 @import "reset.css";
 @import "normalize.css";
+* {
+  font-family: "Montserrat", sans-serif;
+}
 * a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1200px) {
+.Main {
+  font-family: "Montserrat", sans-serif;
+}
+.Main .container .header h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.Main .container .header .MenuIcon {
+  visibility: hidden;
+  width: 70px;
+  height: 70px;
+}
+.Main .container .header a:hover {
+  text-decoration: underline;
+  transition-duration: 0.5s;
+  font-size: 20px;
+}
+.Main .container .header a {
+  transition-duration: 0.5s;
+  font-size: 15px;
+  color: black;
+  font-weight: 800;
+}
+.Main .container .header p {
+  font-size: 15px;
+  font-weight: 800;
+}
+.Main .container .header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 70px;
+}
+.Main .container .header img {
+  width: 70px;
+  height: 70px;
+}
+.Main .container .offer-zone h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.Main .container .offer-zone h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.Main .container .offer-zone a {
+  background-color: #FF0000;
+  color: black;
+  font-weight: 800;
+  border-radius: 30px;
+}
+.Main .container .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.Main .container .cards .card {
+  border-radius: 30px;
+  background-color: white;
+}
+.Main .container .cards .card img {
+  width: 200px;
+}
+.Main .container .cards .card h3 {
+  font-size: 20xp;
+  text-decoration: underline;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+}
+
+.products {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Images/background/ProductsBackground.png);
+  background-repeat: no-repeat;
+}
+.products .container #pageName {
+  font-size: 60px;
+  font-weight: 600;
+}
+.products .container .food {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products .container .food .box-name {
+  background: white;
+  border-radius: 30px;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+.products .container .food .card {
+  border: 1px solid black;
+  background: white;
+  border-radius: 30px;
+}
+.products .container .food .card img {
+  width: 150px;
+}
+.products .container .food .card h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.products .container .food .card a {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.products .container .food .card a:hover {
+  transition-duration: 0.5s;
+  background: black;
+  border-color: white;
+  color: white;
+}
+.products .container .accesories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products .container .accesories .box-name {
+  background: white;
+  border-radius: 30px;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+.products .container .accesories .card {
+  border: 1px solid black;
+  background: white;
+  border-radius: 30px;
+}
+.products .container .accesories .card h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.products .container .accesories .card a {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.products .container .accesories .card a:hover {
+  transition-duration: 0.5s;
+  background: black;
+  border-color: white;
+  color: white;
+}
+
+.about-us {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Images/background/About-UsBackground.png);
+  background-repeat: no-repeat;
+}
+.about-us .container #About {
+  font-size: 50px;
+  font-weight: 600;
+}
+.about-us .container #whyWe {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  background: white;
+  border-radius: 30px;
+}
+.about-us .container .advantages {
+  display: flex;
+  font-size: 25px;
+  font-weight: 400;
+  flex-direction: row;
+}
+.about-us .container .advantages img {
+  height: 150px;
+  width: 150px;
+  background: white;
+  border-radius: 20px;
+}
+.about-us .container .advantages1 {
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+}
+.about-us .container .advantages1 img {
+  height: 150px;
+  width: 150px;
+  background: white;
+  border-radius: 20px;
+}
+.about-us .container .advantages1 h3 {
+  padding-left: 20px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+}
+footer .container .offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .container .maps {
+  text-align: center;
+}
+footer .container .maps h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+footer .container .phone {
+  border-radius: 30px;
+  background: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .container .phone h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+footer .container .phone img {
+  width: 70px;
+  height: 70px;
+}
+footer .container .phone .download {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .container .phone .download h3 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.bottom {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  text-align: center;
+}
+.bottom h2 {
+  background: white;
+  font-size: 40px;
+}
+.bottom h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.bottom .holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.popup {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  line-height: 50px;
+  font-size: 20x;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  top: 50px;
+  left: 860px;
+  visibility: hidden;
+  transition-property: visibility;
+  transition-duration: 1s;
+}
+
+.active {
+  visibility: visible;
+}
+
+@media screen and (min-width: 1280px) {
   .Main {
-    font-family: "Montserrat", sans-serif;
     background-image: url(Images/background/Main%20FrameBackground.jpg);
     background-repeat: no-repeat;
     height: 1080px;
@@ -100,10 +386,389 @@
   }
 
   .products {
-    font-family: "Montserrat", sans-serif;
     background-image: url(Images/background/ProductsBackground.png);
     background-repeat: no-repeat;
+  }
+  .products .container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .products .container #pageName {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .products .container .food {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .products .container .food .box-name {
+    width: 100%;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 30px;
+    height: 80px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 80px;
+  }
+  .products .container .food .card {
+    border: 1px solid black;
+    height: 250px;
+    background: white;
+    border-radius: 30px;
+    width: 250px;
+  }
+  .products .container .food .card img {
+    width: 150px;
+    padding-left: 50px;
+  }
+  .products .container .food .card h3 {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .products .container .food .card a {
+    margin-left: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
+  .products .container .food .card a:hover {
+    transition-duration: 0.5s;
+    background: black;
+    border-color: white;
+    color: white;
+  }
+  .products .container .accesories {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .products .container .accesories .box-name {
+    width: 100%;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 30px;
+    height: 80px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 80px;
+  }
+  .products .container .accesories .card {
+    border: 1px solid black;
+    height: 250px;
+    background: white;
+    border-radius: 30px;
+    width: 250px;
+  }
+  .products .container .accesories .card img {
+    width: 150px;
+    padding-left: 50px;
+  }
+  .products .container .accesories .card h3 {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .products .container .accesories .card a {
+    margin-left: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
+  .products .container .accesories .card a:hover {
+    transition-duration: 0.5s;
+    background: black;
+    border-color: white;
+    color: white;
+  }
+
+  .about-us {
+    background-image: url(Images/background/About-UsBackground.png);
+    background-repeat: no-repeat;
     height: 1080px;
+  }
+  .about-us .container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .about-us .container #About {
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .about-us .container #whyWe {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background: white;
+    border-radius: 30px;
+    margin-bottom: 50px;
+  }
+  .about-us .container .advantages {
+    height: 150px;
+    width: 60%;
+    display: flex;
+    font-size: 25px;
+    font-weight: 400;
+    flex-direction: row;
+    margin-bottom: 50px;
+    line-height: 150px;
+  }
+  .about-us .container .advantages img {
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages h3 {
+    padding-left: 20px;
+  }
+  .about-us .container .advantages1 {
+    font-size: 25px;
+    font-weight: 400;
+    height: 150px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    line-height: 50px;
+  }
+  .about-us .container .advantages1 img {
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages1 h3 {
+    padding-left: 20px;
+  }
+
+  footer {
+    height: 880px;
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+  }
+  footer .container {
+    padding-left: 10%;
+    width: 80%;
+  }
+  footer .container .offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .container .maps {
+    padding-top: 50px;
+    text-align: center;
+    width: 1000px;
+  }
+  footer .container .maps iframe {
+    width: 100%;
+    height: 600px;
+  }
+  footer .container .maps h2 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  footer .container .phone {
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 30px;
+    background: white;
+    border: 1px solid black;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .container .phone h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  footer .container .phone img {
+    width: 70px;
+    height: 70px;
+  }
+  footer .container .phone .download {
+    line-height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .container .phone .download h3 {
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+  }
+
+  .bottom {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  .bottom h2 {
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+  .bottom h3 {
+    height: 70px;
+    line-height: 70px;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  .bottom .holder {
+    width: 80%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom img {
+    width: 70px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Main {
+    background-image: url(Images/background/Main%20FrameBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+  }
+  .Main .container {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 25px;
+  }
+  .Main .container .header {
+    height: 70px;
+  }
+  .Main .container .header h3 {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .Main .container .header a:hover {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+    font-size: 20px;
+  }
+  .Main .container .header a {
+    transition-duration: 0.5s;
+    font-size: 15px;
+    color: black;
+    font-weight: 800;
+  }
+  .Main .container .header p {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .Main .container .header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 70px;
+  }
+  .Main .container .header img {
+    width: 70px;
+    height: 70px;
+  }
+  .Main .container .offer-zone {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  .Main .container .offer-zone h1 {
+    width: 500px;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  .Main .container .offer-zone h2 {
+    width: 500px;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 50px;
+  }
+  .Main .container .offer-zone a {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    width: 300px;
+    background-color: #FF0000;
+    color: black;
+    font-weight: 800;
+    border-radius: 30px;
+  }
+  .Main .container .cards {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Main .container .cards .card {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+  }
+  .Main .container .cards .card img {
+    width: 200px;
+    padding-left: 50px;
+  }
+  .Main .container .cards .card h3 {
+    width: 300px;
+    height: 50px;
+    font-size: 20xp;
+    text-decoration: underline;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .products {
+    background-image: url(Images/background/ProductsBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .products .container {
     width: 80%;
@@ -235,6 +900,7 @@
     font-family: "Montserrat", sans-serif;
     background-image: url(Images/background/About-UsBackground.png);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 1080px;
   }
   .about-us .container {
@@ -298,7 +964,6 @@
   }
 
   footer {
-    font-family: "Montserrat", sans-serif;
     height: 880px;
     background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
   }
@@ -355,7 +1020,6 @@
   }
 
   .bottom {
-    font-family: "Montserrat", sans-serif;
     width: 100%;
     background-color: white;
     text-align: center;
@@ -384,26 +1048,861 @@
   .bottom img {
     width: 70px;
   }
-
-  #popUp {
-    position: fixed;
-    background: white;
-    border: 1px solid black;
-    line-height: 50px;
-    font-size: 20x;
-    border-radius: 30px;
-    font-family: "Montserrat", sans-serif;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    top: 50px;
-    left: 860px;
+}
+@media screen and (max-width: 1280px) {
+  .Main {
+    background-image: url(Images/background/Main%20FrameBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+  .Main .container .header {
+    padding: 2vh 2.5vw 5vh 2.5vw;
+    width: 95vw;
+    height: 6vh;
+  }
+  .Main .container .header nav .MenuIcon {
+    visibility: visible;
+    padding: 0 2vw;
+  }
+  .Main .container .header nav a {
     visibility: hidden;
-    transition-property: visibility;
-    transition-duration: 1s;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .header nav #phone {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .offer-zone {
+    width: 95vw;
+    padding-bottom: 5vh;
+    padding-left: 2.5vw;
+    height: 40vh;
+  }
+  .Main .container .offer-zone h1 {
+    width: 75vw;
+  }
+  .Main .container .offer-zone h2 {
+    padding-bottom: 4vh;
+    width: 75vw;
+  }
+  .Main .container .offer-zone a {
+    padding: 2vh 2vw;
+  }
+  .Main .container .cards {
+    margin-top: 5vh;
+    width: 95vw;
+    padding-left: 2.5vw;
+  }
+  .Main .container .cards .card {
+    text-align: center;
+    width: 40vw;
+    height: 30vh;
+  }
+  .Main .container .cards .card h3 {
+    font-size: 30px;
   }
 
-  .active {
+  .products {
+    background-image: url(Images/background/ProductsBackground.png);
+    background-repeat: no-repeat;
+  }
+  .products .container #pageName {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 5vh;
+    height: 5vh;
+  }
+  .products .container .food {
+    padding-bottom: 5vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .products .container .food .box-name {
+    background: white;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    width: 96vw;
+    height: 5vh;
+    margin-left: 2vw;
+    line-height: 5vh;
+  }
+  .products .container .food .card {
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 30px;
+    width: 20vw;
+  }
+  .products .container .food .card img {
+    width: 15vw;
+  }
+  .products .container .food .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3vh;
+    height: 3vh;
+  }
+  .products .container .food .card a {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    transition-duration: 0.5s;
+  }
+  .products .container .food .card a:hover {
+    transition-duration: 0.5s;
+    background: black;
+    border-color: white;
+    color: white;
+  }
+  .products .container .accesories {
+    padding-bottom: 5vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .products .container .accesories .box-name {
+    background: white;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    width: 96vw;
+    margin-left: 2vw;
+    height: 5vh;
+    line-height: 5vh;
+  }
+  .products .container .accesories .card {
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 30px;
+    width: 20vw;
+  }
+  .products .container .accesories .card img {
+    width: 15vw;
+  }
+  .products .container .accesories .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3vh;
+    height: 3vh;
+  }
+  .products .container .accesories .card a {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    transition-duration: 0.5s;
+  }
+  .products .container .accesories .card a:hover {
+    transition-duration: 0.5s;
+    background: black;
+    border-color: white;
+    color: white;
+  }
+
+  .about-us {
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    height: 100vh;
+  }
+  .about-us .container {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .about-us .container #About {
+    padding: 1vh 0;
+    font-size: 30px;
+    font-weight: 600;
+    height: 5vh;
+    line-height: 5vh;
+  }
+  .about-us .container #whyWe {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    background: white;
+    border-radius: 30px;
+  }
+  .about-us .container .advantages {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    flex-direction: row;
+    line-height: 15vh;
+    margin: 2vh 0;
+  }
+  .about-us .container .advantages img {
+    height: 15vh;
+    width: 15vh;
+    background: white;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages h3 {
+    padding-left: 2vw;
+  }
+  .about-us .container .advantages1 {
+    margin: 2vh 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    flex-direction: row;
+  }
+  .about-us .container .advantages1 img {
+    height: 15vh;
+    width: 15vh;
+    background: white;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages1 h3 {
+    padding-left: 2vw;
+  }
+
+  footer {
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    width: 100vw;
+  }
+  footer .container {
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  footer .container .offer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer .container .maps {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    text-align: center;
+    width: 80vw;
+  }
+  footer .container .maps h2 {
+    padding-bottom: 2vh;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  footer .container .phone {
+    width: 80vw;
+    margin-bottom: 10vh;
+  }
+  footer .container .phone h2 {
+    padding-bottom: 2vh;
+  }
+  footer .container .phone .download {
+    height: 10vh;
+    padding-left: 25%;
+    width: 50%;
+    line-height: 10vh;
+  }
+
+  .bottom {
+    background-color: white;
+    text-align: center;
+  }
+  .bottom h2 {
+    background: white;
+    font-size: 20px;
+  }
+  .bottom h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bottom .holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom img {
+    width: 5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Main {
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    height: 100vh;
+    width: 100vw;
+  }
+  .Main .container .header {
+    width: 95vw;
+    height: 6vh;
+  }
+  .Main .container .header nav {
+    padding-right: 5vw;
+    line-height: 6vh;
+  }
+  .Main .container .header nav .MenuIcon {
     visibility: visible;
+    padding: 0 2vw;
+    width: 10vw;
+  }
+  .Main .container .header nav #name {
+    font-size: 15px;
+  }
+  .Main .container .header nav img {
+    width: 6vh;
+    height: 6vh;
+  }
+  .Main .container .header nav a {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .header nav #phone {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .offer-zone {
+    width: 95vw;
+    padding-bottom: 5vh;
+    padding-left: 2.5vw;
+    height: 40vh;
+  }
+  .Main .container .offer-zone h1 {
+    width: 75vw;
+  }
+  .Main .container .offer-zone h2 {
+    padding-bottom: 4vh;
+    width: 75vw;
+  }
+  .Main .container .offer-zone a {
+    padding: 2vh 2vw;
+  }
+  .Main .container .cards {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .products {
+    background-image: url(Images/background/ProductsBackground.png);
+    background-repeat: no-repeat;
+  }
+  .products .container #pageName {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 5vh;
+    height: 5vh;
+  }
+  .products .container .food {
+    padding-bottom: 5vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .products .container .food .box-name {
+    background: white;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    width: 96vw;
+    height: 5vh;
+    margin-left: 2vw;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+  }
+  .products .container .food .card {
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 30px;
+    width: 40vw;
+    margin-bottom: 1vh;
+  }
+  .products .container .food .card img {
+    width: 30vw;
+  }
+  .products .container .food .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3vh;
+    height: 3vh;
+  }
+  .products .container .food .card a {
+    visibility: hidden;
+  }
+  .products .container .accesories {
+    padding-bottom: 5vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .products .container .accesories .box-name {
+    background: white;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    width: 96vw;
+    margin-left: 2vw;
+    height: 5vh;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+  }
+  .products .container .accesories .card {
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 30px;
+    width: 40vw;
+    margin-bottom: 1vh;
+  }
+  .products .container .accesories .card img {
+    width: 30vw;
+  }
+  .products .container .accesories .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3vh;
+    height: 3vh;
+  }
+  .products .container .accesories .card a {
+    visibility: hidden;
+  }
+
+  .about-us {
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    height: 100vh;
+  }
+  .about-us .container {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .about-us .container #About {
+    padding: 1vh 0;
+    font-size: 20px;
+    font-weight: 600;
+    height: 5vh;
+    line-height: 5vh;
+  }
+  .about-us .container #whyWe {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    background: white;
+    border-radius: 30px;
+  }
+  .about-us .container .advantages {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    flex-direction: row;
+    margin: 2vh 0;
+  }
+  .about-us .container .advantages img {
+    height: 10vh;
+    width: 10vh;
+    background: white;
+    margin-top: 2.5vh;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages h3 {
+    padding-left: 2vw;
+  }
+  .about-us .container .advantages1 {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    flex-direction: row;
+  }
+  .about-us .container .advantages1 img {
+    height: 10vh;
+    width: 10vh;
+    margin-top: 2.5vh;
+    background: white;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages1 h3 {
+    padding-top: 1vh;
+    padding-left: 2vw;
+  }
+
+  footer {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    width: 100vw;
+  }
+  footer .container {
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  footer .container .offer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer .container .maps {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  footer .container .maps iframe {
+    visibility: hidden;
+    width: 0;
+  }
+  footer .container .phone {
+    width: 80vw;
+    margin-bottom: 10vh;
+  }
+  footer .container .phone h2 {
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+  }
+  footer .container .phone .download {
+    height: 10vh;
+    padding-left: 5%;
+    width: 90%;
+    line-height: 10vh;
+  }
+
+  .bottom {
+    background-color: white;
+    text-align: center;
+  }
+  .bottom h2 {
+    background: white;
+    font-size: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .bottom h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bottom .holder {
+    padding: 0 5vw;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom img {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Main {
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    height: 100vh;
+    width: 100vw;
+  }
+  .Main .container .header {
+    width: 95vw;
+    height: 6vh;
+  }
+  .Main .container .header nav {
+    padding-right: 5vw;
+    line-height: 6vh;
+  }
+  .Main .container .header nav .MenuIcon {
+    visibility: visible;
+    padding: 0 2vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  .Main .container .header nav #name {
+    visibility: hidden;
+    width: 0;
+  }
+  .Main .container .header nav img {
+    width: 6vh;
+    height: 6vh;
+  }
+  .Main .container .header nav a {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .header nav #phone {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .offer-zone {
+    width: 95vw;
+    padding-bottom: 5vh;
+    padding-left: 2.5vw;
+    height: 40vh;
+  }
+  .Main .container .offer-zone h1 {
+    width: 75vw;
+  }
+  .Main .container .offer-zone h2 {
+    padding-bottom: 4vh;
+    width: 75vw;
+    font-size: 20px;
+  }
+  .Main .container .offer-zone a {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .Main .container .cards {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .products {
+    background-image: url(Images/background/ProductsBackground.png);
+    background-repeat: no-repeat;
+  }
+  .products .container #pageName {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 5vh;
+    height: 5vh;
+  }
+  .products .container .food {
+    padding-bottom: 5vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .products .container .food .box-name {
+    background: white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    width: 96vw;
+    height: 5vh;
+    margin-left: 2vw;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+  }
+  .products .container .food .card {
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 30px;
+    width: 40vw;
+    margin-bottom: 1vh;
+  }
+  .products .container .food .card img {
+    width: 30vw;
+  }
+  .products .container .food .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3vh;
+    height: 3vh;
+  }
+  .products .container .food .card a {
+    visibility: hidden;
+  }
+  .products .container .accesories {
+    padding-bottom: 5vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .products .container .accesories .box-name {
+    background: white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    width: 96vw;
+    margin-left: 2vw;
+    height: 5vh;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+  }
+  .products .container .accesories .card {
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 30px;
+    width: 40vw;
+    margin-bottom: 1vh;
+  }
+  .products .container .accesories .card img {
+    width: 30vw;
+  }
+  .products .container .accesories .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3vh;
+    height: 3vh;
+  }
+  .products .container .accesories .card a {
+    visibility: hidden;
+  }
+
+  .about-us {
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    height: 100vh;
+  }
+  .about-us .container {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .about-us .container #About {
+    padding: 1vh 0;
+    font-size: 20px;
+    font-weight: 600;
+    height: 5vh;
+    line-height: 5vh;
+  }
+  .about-us .container #whyWe {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    background: white;
+    border-radius: 30px;
+    margin-bottom: 3vh;
+  }
+  .about-us .container .advantages {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+    flex-direction: row;
+    margin: 5vh 0;
+  }
+  .about-us .container .advantages img {
+    height: 10vh;
+    width: 10vh;
+    background: white;
+    margin-top: 2.5vh;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages h3 {
+    padding-left: 2vw;
+  }
+  .about-us .container .advantages1 {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    flex-direction: row;
+  }
+  .about-us .container .advantages1 img {
+    height: 10vh;
+    width: 10vh;
+    margin-top: 2.5vh;
+    background: white;
+    border-radius: 20px;
+  }
+  .about-us .container .advantages1 h3 {
+    padding-left: 2vw;
+  }
+
+  footer {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(107.56deg, #FF9900 0%, rgba(255, 153, 0, 0.8) 100%);
+    width: 100vw;
+  }
+  footer .container {
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  footer .container .offer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer .container .maps {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  footer .container .maps iframe {
+    visibility: hidden;
+    width: 0;
+  }
+  footer .container .phone {
+    width: 80vw;
+    height: 90vh;
+    margin-bottom: 10vh;
+  }
+  footer .container .phone h2 {
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+  }
+  footer .container .phone .download {
+    height: 10vh;
+    padding-left: 5%;
+    width: 90%;
+    line-height: 10vh;
+  }
+
+  .bottom {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    text-align: center;
+  }
+  .bottom h2 {
+    background: white;
+    font-size: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .bottom h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bottom .holder {
+    padding: 0 5vw;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom img {
+    width: 10vw;
   }
 }
