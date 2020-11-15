@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <div class="Main">
+    <div class="Main" id="Main">
         <div class="container">
             <div class="header">
                 <nav>
                     <img src="Images/png/Logo.png" alt="Logo">
                     <h3 id="name">Satisfied Cat</h3>
-                    <a class="link" href="#">ГОЛОВНА</a>
-                    <a class="link" href="#">ТОВАРИ</a>
-                    <a class="link" href="#">ПРО НАС</a>
-                    <a class="link" href="#">КОНТАКТИ</a>
+                    <a id="MainBut" href="#">ГОЛОВНА</a>
+                    <a id="ProductBut" href="#">ТОВАРИ</a>
+                    <a id="AboutBut" href="#">ПРО НАС</a>
+                    <a id="ContactBut" href="#">КОНТАКТИ</a>
                     <img id="phone" src="Images/svg/phone-call.svg" alt="phone">
                     <p id="phone">0669999999</p>
                     <img src="Images/svg/MenuIcon.svg" class="MenuIcon" alt="">
@@ -37,16 +37,16 @@
             <div class="cards">
                 <div class="card">
                     <h3>Їжа</h3>
-                    <img src="images/png/corm.png" alt="Food">
+                    <img src="Images/png/corm.png" alt="Food">
                 </div>
                 <div class="card">
                     <h3>Аксесуари</h3>
-                    <img src="images/png/miska.png" alt="Miska">
+                    <img src="Images/png/miska.png" alt="Miska">
                 </div>
             </div>
         </div>
     </div>
-    <div class="products">
+    <div class="products" id="products">
         <div class="container">
             <h2 id="pageName">Товари</h2>
             <div class="food">
@@ -56,7 +56,7 @@
                 <div class="card">
                     <h3>Корм</h3>
                     <img src="Images/png/corm.png" alt="">
-                    <a href="#">Замовити</a>
+                    <a id="popUpper" href="#">Замовити</a>
                 </div>
                 <div class="card">
                     <h3>Корм</h3>
@@ -101,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="about-us">
+    <div class="about-us" id="About">
         <div class="container">
             <h2 id="About">Про нас</h2>
             <h2 id="whyWe">Чому саме ми ?</h2>
@@ -123,7 +123,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="offer">
                 <div class="maps">
@@ -148,7 +148,7 @@
             </div>
         </div>
     </footer>
-    <div class="bottom">
+    <div class="bottom" >
         <h2>Шукайте нас в соціальних мережах</h2>
         <div class="holder">
             <img src="Images/svg/instagram.svg" alt="instagram">
@@ -159,7 +159,6 @@
         <h3>© 2020 Satisfied Cat. All rights reserved.</h3>
     </div>
     <h3 class="popup">Товар добавлено в корзину</h3>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
     <script src="script.js"></script>
 </body>
 
